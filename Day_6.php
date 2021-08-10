@@ -4,13 +4,9 @@
   //Write code here
   $count = 1;
   $input = readline();
-  $length = strlen($input);
-  for($i = 0;$i <= $length; $i++){
-    $temp = (int)($input/10);
-    if($temp != 0){
-      $input = $temp;
+  while((int)($input/10) != 0){
+      $input = (int)($input/10);
       $count++;
-    }
   }
   echo $count;
 ?>
